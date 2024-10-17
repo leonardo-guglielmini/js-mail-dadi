@@ -11,3 +11,17 @@ if(userEmails.includes(email)){
 }
 
 //Es. DADI
+
+let numPlayer = (Math.floor(Math.random()*(6-1)+1));
+let numComputer = (Math.floor(Math.random()*(6-1)+1));
+
+console.log(`Numero generato per il giocatore: ${numPlayer}`);
+console.log(`Numero generato per il computer: ${numComputer}`);
+
+if(numPlayer>numComputer){
+    console.log(`Il numero vincente è: ${numPlayer}`);
+}else if( numComputer>numPlayer){
+    console.log(`Il numero vincente è: ${numComputer}`);
+}else{
+    console.log("PAREGGIO");
+}
