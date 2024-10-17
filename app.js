@@ -3,12 +3,21 @@
 const userEmails = ["ciao@prova.it", "test@test.com", "hello@world.com"];
 
 let email = prompt("Inserisci qui la tua email: ");
+let isPresent = false
 
+/*
 if(userEmails.includes(email)){
     console.log(`Benvenuto ${email}`);
 }else{
     console.log("La tua mail non risulta presente nel nostro elenco.")
 }
+    */
+for(let i=0; i < userEmails.length; i++){
+    if(email===userEmails[i]){
+        isPresent=true;
+    }
+}
+console.log(`${isPresent?`Benvenuto ${email}`:"La tua mail non risulta presente nel nostro elenco."}`);
 
 //Es. DADI
 
